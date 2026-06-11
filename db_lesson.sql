@@ -34,17 +34,17 @@ Q5 UPDATE people SET department_id = 1 WHERE person_id = 17;
 UPDATE people SET department_id = 2 WHERE person_id = 18;
 SELECT name, age FROM people WHERE gender = 1 ORDER BY age DESC;
 
-Q6 peopleというテーブルから。name,eemail,ageという3つのカラムを抽出します。総裁、department＿idが１であるレコードのみに条件を絞り込み、最終的にcreated＿atの根に基づいて日付の古い順で並び替えて表示する、という命令です。
+Q6 peopleというテーブルから。name,eemail,ageという3つのカラムを抽出をします。department＿idが１であるレコードのみに条件を絞り込み、最終的にcreated＿atの値に基づいて日付の古い順で並び替えて表示する、という命令です。
 
 Q7 SELECT name FROM people
-
-Q8 WHERE (age BETWEEN 20 AND 29 AND gender = 2)
+WHERE (age BETWEEN 20 AND 29 AND gender = 2)
 OR (age BETWEEN 40 AND 49 AND gender = 1);
 
-Q9 SELECT * FROM people
+Q８SELECT * FROM people
 WHERE department_id = 1
 ORDER BY age ASC;
-SELECT AVG(age) AS average_age
+
+q９SELECT AVG(age) AS average_age
 FROM people
 WHERE department_id = 2 AND gender = 2;
 
